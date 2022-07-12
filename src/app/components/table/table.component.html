@@ -1,0 +1,30 @@
+<div class="bg-secondary m-2">
+        toplamda {{getProducts()?.length}} tane ürün bulunmaktadır
+</div>
+<table class="table table-sm table-bordered">
+        <thead class="table-light">
+                <tr>
+                        <th>NUMARA</th>
+                        <th>NAME</th>
+                        <th>CATEGORY</th>
+                        <th>PRICE</th>
+                        <th>EDIT</th>
+                </tr>
+        </thead>
+        <tbody class="table-light">
+                <tr  *ngFor="let item of getProducts(); let i=index; let odd = odd;
+                let even = even" [class.table-info]="odd" [class.table-danger]="even"
+                     class="align-middle">
+                        <td>{{i + 1}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.category}}</td>
+                        <td>{{item.price}}</td>
+                        <td class="text-center">
+                                <button class="btn btn-danger btn-sm"
+                                        (click)="deleteProduct(item.id)">
+                                        Delete
+                                </button>
+                        </td>
+                </tr>
+        </tbody>
+</table>
