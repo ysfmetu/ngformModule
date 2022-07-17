@@ -1,6 +1,7 @@
 # Form Module uygulaması
 
-Uygulamamızda 3 tane component(table ,form,message) aynı ekranda çalışmaktadır
+Uygulamamızda 3 tane component(table ,form,message) aynı ekranda çalışmaktadır.Uygulamamız Crud işlemi yapmaktadır.FormModule kullanılmış olup ,Bootstrapdan 
+faydalanılmıştır.
 
 # Detaylar
 mesagge component:Üst tarafta mesaj paneli vardır ve dinamik olarak yaptığımız işlemleri okuyup bilgi mesajı vermektedir
