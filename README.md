@@ -7,6 +7,7 @@ faydalanılmıştır.
 mesagge component:Üst tarafta mesaj paneli vardır ve dinamik olarak yaptığımız işlemleri okuyup bilgi mesajı vermektedir
 table component : liste çekmekte ve edit-delete tuşları ile idleri alıp arka tarafta işlem yapmaktadır.
 Form component  : edit ve create işlemi yapmaktadır. aynı platform üzerinde table component'tan gelen emire göre updata/create olayını belirlemektedir.
+RXJS subject ile son kayıt hafızada tutulup ona göre ekrana mesaj verilir veya create or update olduğu belli olur
 
 ## ekran görüntüleri
 
