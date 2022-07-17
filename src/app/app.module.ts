@@ -1,22 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { ProductComponent } from './component';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { TableComponent } from './components/table/table.component';
-import { FormComponent } from './components/form/form.component';
+import { TableComponent } from './core/table.component';
+import { FormComponent } from './core/form.component';
+import { MessageComponent } from './messages/message.component';
+import {CoreModule} from "./core/core.module";
+import {MessageModule} from "./messages/message.module";
+import {ModelModule} from "./model/model.module";
 
 @NgModule({
-    declarations: [ProductComponent,TableComponent, FormComponent],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        FormsModule, ReactiveFormsModule
-    ],
+    declarations: [],
+    imports:[BrowserModule,ModelModule,CoreModule,MessageModule],
     providers: [],
-    bootstrap: [ProductComponent]
+    bootstrap: [TableComponent,FormComponent,MessageComponent],
+    exports:[]
 })
 export class AppModule { }
